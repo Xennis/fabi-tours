@@ -1,7 +1,7 @@
 import { unstable_cache } from "next/cache"
 import type { AlternateURLs } from "next/dist/lib/metadata/types/alternative-urls-types"
-import { fetchDatabasePages } from "@react-notion-cms/fetch"
-import { fetchBlocksChildren } from "@react-notion-cms/render"
+import { fetchDatabasePages } from "@xennis/react-notion-cms-fetch"
+import { fetchBlocksChildren } from "@xennis/react-notion-cms-render"
 
 import { processPlace } from "@/lib/cms/places"
 import { processPages } from "@/lib/cms/pages"

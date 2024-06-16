@@ -6,7 +6,7 @@ import {
   propsNumber,
   propsUniqueIdNumber,
   propsUrl,
-} from "@react-notion-cms/fetch"
+} from "@xennis/react-notion-cms-fetch"
 
 import { i18n } from "@/content/i18n"
 

@@ -11,9 +11,9 @@
   "dependencies": {
     "@heroicons/react": "^2.1.3",
     "@notionhq/client": "^2.2.15",
-    "@react-notion-cms/fetch": "https://gitpkg.now.sh/Xennis/react-notion-render/packages/fetch?f2c2d97&scripts.install=pnpm%20build",
-    "@react-notion-cms/render": "https://gitpkg.now.sh/Xennis/react-notion-render/packages/render?f2c2d97&scripts.install=pnpm%20build",
     "@vercel/analytics": "^1.2.2",
+    "@xennis/react-notion-cms-fetch": "0.0.1-alpha.2",
+    "@xennis/react-notion-cms-render": "0.0.1-alpha.2",
     "mapbox-gl": "^3.3.0",
     "next": "14.2.3",
     "react": "^18",

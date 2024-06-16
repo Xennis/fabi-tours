@@ -1,6 +1,6 @@
 import { type Metadata } from "next"
 import { notFound } from "next/navigation"
-import { Render } from "@react-notion-cms/render"
+import { Render } from "@xennis/react-notion-cms-render"
 
 import { Headline } from "@/components/layout/headline"
 import { getCachedPage, getCachedPageContent, getCachedPages, getCachedPlaces } from "@/lib/cms/fetchers"
