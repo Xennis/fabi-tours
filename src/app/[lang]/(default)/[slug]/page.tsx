@@ -7,6 +7,8 @@ import { getCachedPage, getCachedPageContent, getCachedPages, getCachedPlaces } 
 import { pageTitle } from "@/content/config"
 import PlaceList from "@/components/place-list"
 
+export const dynamicParams = false
+
 export async function generateStaticParams({ params }: { params: { lang: string } }) {
   return (await getCachedPages()).filter((p) => p.lang.toString() === params.lang).map((p) => ({ slug: p.slug }))
 }
