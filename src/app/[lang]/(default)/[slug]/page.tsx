@@ -67,7 +67,10 @@ export default async function SlugPage({ params }: { params: { lang: string; slu
   return (
     <div className={params.slug === "legal" ? "text-center" : ""}>
       <Headline>{page.title}</Headline>
-      <Render blocks={content} options={{ formatDateFn: (date) => date.toString(), resolveLinkFn: (nId) => null }} />
+      <Render
+        blocks={content}
+        options={{ formatDateFn: (date) => new Date(date).toString(), resolveLinkFn: (nId) => null }}
+      />
       {endComponent !== undefined ? endComponent : <></>}
     </div>
   )
