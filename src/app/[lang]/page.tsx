@@ -6,13 +6,15 @@ import { createAlternativeUrls } from "@/lib/next"
 import { homePage } from "@/content/config"
 import { getCachedPlaces } from "@/lib/cms/fetchers"
 
-export function generateMetadata({ params }: { params: { lang: string } }): Metadata | null {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata | null> {
+  const params = await props.params
   return {
     alternates: createAlternativeUrls(homePage, params.lang),
   }
 }
 
-export default async function LangHomePage({ params }: { params: { lang: string } }) {
+export default async function LangHomePage(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params
   const places = await getCachedPlaces()
   return (
     <Suspense fallback={<div className="h-full w-full animate-pulse bg-gray-500"></div>}>
