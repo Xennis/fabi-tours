@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+
+# Build artifacts
+.next/
+dist/
+out/
+
+# vercel
+.vercel
+
+# typescript
+next-env.d.ts
+
+# pnpm
+pnpm-lock.yaml
