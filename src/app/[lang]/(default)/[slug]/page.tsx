@@ -13,11 +13,10 @@ export async function generateStaticParams({ params }: { params: { lang: string 
   return (await getCachedPages()).filter((p) => p.lang.toString() === params.lang).map((p) => ({ slug: p.slug }))
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { lang: string; slug: string }
+export async function generateMetadata(props: {
+  params: Promise<{ lang: string; slug: string }>
 }): Promise<Metadata | null> {
+  const params = await props.params
   const page = await getCachedPage(params)
   if (page === null) {
     return null
@@ -51,7 +50,8 @@ export async function generateMetadata({
   }
 }
 
-export default async function SlugPage({ params }: { params: { lang: string; slug: string } }) {
+export default async function SlugPage(props: { params: Promise<{ lang: string; slug: string }> }) {
+  const params = await props.params
   const page = await getCachedPage(params)
   if (page === null) {
     notFound()

@@ -10,10 +10,15 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata | null> {
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata | null> {
+  const params = await props.params
   return getMetadata(params.lang)
 }
 
-export default function LangLayout({ children, params }: { children: React.ReactNode; params: { lang: string } }) {
+export default async function LangLayout(props: { children: React.ReactNode; params: Promise<{ lang: string }> }) {
+  const params = await props.params
+
+  const { children } = props
+
   return <RootLayout lang={params.lang}>{children}</RootLayout>
 }
