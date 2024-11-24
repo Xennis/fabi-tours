@@ -3,7 +3,7 @@
 //
 // const headersList = headers()
 // const host = headersList.get("host")!
-export const host = "fabi-tours.vercel.app"
+export const host = "tours.fabian-rosenthal.com"
 
 export const homePage = (lang: string) => `/${lang}`
 export const legalPage = (lang: string) => `/${lang}/legal`
