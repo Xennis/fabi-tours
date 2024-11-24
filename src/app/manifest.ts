@@ -2,6 +2,9 @@ import type { MetadataRoute } from "next"
 
 import { brandColor } from "@/content/config"
 
+// static site
+export const dynamic = "force-static"
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "FabiTours",
