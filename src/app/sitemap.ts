@@ -4,6 +4,9 @@ import { homePage, host } from "@/content/config"
 import { i18n } from "@/content/i18n"
 import { getCachedPages } from "@/lib/cms/fetchers"
 
+// static site
+export const dynamic = "force-static"
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const sites: MetadataRoute.Sitemap = []
   i18n.locales.forEach((lang) => {
