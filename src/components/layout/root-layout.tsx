@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google"
-import { Analytics } from "@vercel/analytics/react"
 
 import { Header } from "@/components/layout/header"
 
@@ -14,7 +13,6 @@ export function RootLayout({ children, lang }: { children: React.ReactNode; lang
           <Header lang={lang} />
           {children}
         </div>
-        <Analytics />
       </body>
     </html>
   )
