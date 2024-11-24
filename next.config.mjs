@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "fabi-tours",
-  // static site (will be set by CI automatically)
+  // static site (both will be set by CI automatically)
+  // basePath: "/fabi-tours",
   // output: "export",
 }
 
