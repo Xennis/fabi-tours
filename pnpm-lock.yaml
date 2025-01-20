@@ -25,8 +25,8 @@ importers:
         specifier: 1.0.0-beta.2
         version: 1.0.0-beta.2
       mapbox-gl:
-        specifier: ^3.9.2
-        version: 3.9.2
+        specifier: ^3.9.3
+        version: 3.9.3
       next:
         specifier: 15.1.5
         version: 15.1.5(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -1259,8 +1259,8 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  mapbox-gl@3.9.2:
-    resolution: {integrity: sha512-ADGW4rJOylwcy9+yGf8HM2sLXLh3An+9PZVQzdpXrSbSNt0dI7e49a6NY35Yf2wbd4hoVyR5M3hy7cQ9sFrC2w==}
+  mapbox-gl@3.9.3:
+    resolution: {integrity: sha512-31mh95f35srpBMxAP32F9dKQXz7pT5VxQA5r6bFY6Aa5G6Z6NC/SVOTyWR+G/wY8wXWTHAnOaAAf5UkD5++/Kg==}
 
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
@@ -3271,7 +3271,7 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  mapbox-gl@3.9.2:
+  mapbox-gl@3.9.3:
     dependencies:
       '@mapbox/jsonlint-lines-primitives': 2.0.2
       '@mapbox/mapbox-gl-supported': 3.0.0
