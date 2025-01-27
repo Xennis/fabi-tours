@@ -22,8 +22,8 @@ importers:
         specifier: 1.0.0-beta.3
         version: 1.0.0-beta.3
       '@xennis/react-notion-cms-render':
-        specifier: 1.0.0-beta.2
-        version: 1.0.0-beta.2
+        specifier: 1.0.0-beta.3
+        version: 1.0.0-beta.3
       mapbox-gl:
         specifier: ^3.9.3
         version: 3.9.3
@@ -468,8 +468,8 @@ packages:
   '@xennis/react-notion-cms-fetch@1.0.0-beta.3':
     resolution: {integrity: sha512-bXvYlaumUCCpA18Ls8JRcWBekhY1depLm4DTdZ5VxY9Xj7tXEGXvmnTQvr8nIRJOWtMhHmg/L1ZVCZLszAbgJQ==}
 
-  '@xennis/react-notion-cms-render@1.0.0-beta.2':
-    resolution: {integrity: sha512-3VGkUOQmeA/6JSoijrs7Mq1SmBuS9cpcFEtNquXMWXY3W9wxmxp295du2vXTnxo5X0u67oalICWYvcnpBlh34g==}
+  '@xennis/react-notion-cms-render@1.0.0-beta.3':
+    resolution: {integrity: sha512-kqhtAe4jqrcIYMdQ8NfJwgP5QHV0DQ/fAxODlPbvoh/KF59f5e1nbXgm/I2foeRQGyLaHRGgMX2Z9pjuNpGhrQ==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2294,7 +2294,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@xennis/react-notion-cms-render@1.0.0-beta.2':
+  '@xennis/react-notion-cms-render@1.0.0-beta.3':
     dependencies:
       '@notionhq/client': 2.2.15
     transitivePeerDependencies:
