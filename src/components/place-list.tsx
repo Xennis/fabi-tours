@@ -27,7 +27,7 @@ export default async function PlaceList({ lang, places }: { lang: string; places
               {places.map((p, j) => {
                 return (
                   <li key={j} className="py-2">
-                    <h3 className="pb-2 pt-4 text-lg font-semibold md:text-xl">{p.properties.title}</h3>
+                    <h3 className="pt-4 pb-2 text-lg font-semibold md:text-xl">{p.properties.title}</h3>
                     <div className="max-w-[300px]">
                       <PlacePropertiesCard lang={lang} props={p.properties} />
                     </div>
