@@ -5,10 +5,10 @@ import { PlaceProperties, tagColors, tagLabel } from "@/lib/cms/places"
 import { i18n } from "@/content/i18n"
 
 const Link = ({ className, ...props }: React.ComponentPropsWithoutRef<"a">) => {
-  /* outline-none: Somehow the link is auto-selected if a new page with a place is opened */
+  /* outline-hidden: Somehow the link is auto-selected if a new page with a place is opened */
   return (
     <a
-      className={cn("underline decoration-emerald-500 decoration-2 outline-none hover:no-underline", className ?? "")}
+      className={cn("underline decoration-emerald-500 decoration-2 outline-hidden hover:no-underline", className ?? "")}
       {...props}
     >
       {props.children}
@@ -34,7 +34,7 @@ export const PlacePropertiesCard = ({ lang, props }: { lang: string; props: Plac
     <>
       <div className="flex space-x-2.5">
         <span
-          className="rounded px-1.5 py-0.5 text-sm text-white"
+          className="rounded-sm px-1.5 py-0.5 text-sm text-white"
           style={{ backgroundColor: tagColors[props.mainTag] }}
         >
           {tagLabel(lang)[props.mainTag]}
