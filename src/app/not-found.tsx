@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <RootLayout lang={lang}>
-      <main className="mx-auto w-full max-w-screen-xl px-3 py-10">
+      <main className="mx-auto w-full max-w-(--breakpoint-xl) px-3 py-10">
         <Headline>Page Not Found</Headline>
         <p>
           This page could not be found. Return to <NextLink href={homePage(lang)}>Home</NextLink>.
