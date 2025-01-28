@@ -1,5 +1,5 @@
 .mapboxgl-popup {
-  @apply max-w-[400px] min-w-[300px];
+  @apply min-w-[300px] max-w-[400px];
 }
 
 .mapboxgl-popup-close-button {
