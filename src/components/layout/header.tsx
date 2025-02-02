@@ -26,18 +26,18 @@ export const Header = ({ lang }: { lang: string }) => {
           <span aria-hidden={true}>&nbsp;☀️</span>️
         </NextLink>
         <ul className="flex items-center space-x-3 divide-x divide-black">
-          <li>
+          <li className="pe-3">
             <NextLink href={legalPage(lang)} className="hover:underline">
               {dictionary.legalLabel}
             </NextLink>
           </li>
-          <li className="ps-3">
+          <li className="pe-3">
             {/* TODO: Add fallback */}
             <Suspense>
               <LanguageToggle className="hover:underline" />
             </Suspense>
           </li>
-          <li className="ps-3">
+          <li>
             <a href="https://www.instagram.com/fabitours.hh/" target="_blank">
               <span className="sr-only">Instagram</span>
               <NextImage
