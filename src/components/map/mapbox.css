@@ -1,3 +1,5 @@
+@reference "tailwindcss";
+
 .mapboxgl-popup {
   @apply max-w-[400px] min-w-[300px];
 }

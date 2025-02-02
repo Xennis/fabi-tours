@@ -34,7 +34,7 @@ export const PlacePropertiesCard = ({ lang, props }: { lang: string; props: Plac
     <>
       <div className="flex space-x-2.5">
         <span
-          className="rounded-sm px-1.5 py-0.5 text-sm text-white"
+          className="rounded px-1.5 py-0.5 text-sm text-white"
           style={{ backgroundColor: tagColors[props.mainTag] }}
         >
           {tagLabel(lang)[props.mainTag]}
