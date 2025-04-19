@@ -1,11 +1,9 @@
 import NextLink from "next/link"
 import { Suspense } from "react"
-import NextImage from "next/image"
 
 import { homePage, legalPage } from "@/content/config"
 import { LanguageToggle } from "@/components/layout/language-toggle"
 import { i18n } from "@/content/i18n"
-import instagramIcon from "@/content/images/instagram.svg"
 
 export const Header = ({ lang }: { lang: string }) => {
   const dictionary =
@@ -31,23 +29,11 @@ export const Header = ({ lang }: { lang: string }) => {
               {dictionary.legalLabel}
             </NextLink>
           </li>
-          <li className="pe-3">
+          <li>
             {/* TODO: Add fallback */}
             <Suspense>
               <LanguageToggle className="hover:underline" />
             </Suspense>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/fabitours.hh/" target="_blank">
-              <span className="sr-only">Instagram</span>
-              <NextImage
-                aria-hidden={true}
-                className="hover:grayscale"
-                width={25}
-                src={instagramIcon}
-                alt="Instagram logo"
-              />
-            </a>
           </li>
         </ul>
       </nav>
