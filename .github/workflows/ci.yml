@@ -17,3 +17,10 @@ jobs:
             - args: [--frozen-lockfile]
       - name: Check code format
         run: pnpm run format:check
+      - name: Build
+        run: pnpm run build
+        env:
+          NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN: ${{ secrets.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN }}
+          NOTION_ACCESS_TOKEN: ${{ secrets.NOTION_ACCESS_TOKEN }}
+          NOTION_PLACES_DB_ID: ${{ secrets.NOTION_PLACES_DB_ID }}
+          NOTION_PAGES_DB_ID: ${{ secrets.NOTION_PAGES_DB_ID }}
