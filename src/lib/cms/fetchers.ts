@@ -60,6 +60,7 @@ export async function getCachedPage({ lang, slug }: { lang: string; slug: string
 }
 
 export async function getCachedPageContent(blockId: string) {
+  console.debug("getCachedPageContent", blockId)
   return await unstable_cache(
     async () => {
       return fetchBlocksChildren(

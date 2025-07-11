@@ -10,7 +10,11 @@ import PlaceList from "@/components/place-list"
 export const dynamicParams = false
 
 export async function generateStaticParams({ params }: { params: { lang: string } }) {
-  return (await getCachedPages()).filter((p) => p.lang.toString() === params.lang).map((p) => ({ slug: p.slug }))
+  const result = (await getCachedPages())
+    .filter((p) => p.lang.toString() === params.lang)
+    .map((p) => ({ slug: p.slug }))
+  console.debug("generateStaticParams", result)
+  return result
 }
 
 export async function generateMetadata(props: {
