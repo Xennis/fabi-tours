@@ -31,6 +31,7 @@ export async function getCachedPlaces() {
 export async function getCachedPages() {
   return await unstable_cache(
     async () => {
+      console.debug("fetchDatabasePages", process.env.NOTION_PAGES_DB_ID)
       const pages = await fetchDatabasePages(notionClient, processPages, {
         database_id: process.env.NOTION_PAGES_DB_ID!,
         page_size: 50,
