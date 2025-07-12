@@ -6,7 +6,9 @@
 export const host = "tours.fabian-rosenthal.com"
 
 export const homePage = (lang: string) => `/${lang}`
+// slugs configured in CMS
 export const legalPage = (lang: string) => `/${lang}/legal`
+export const placesPage = (lang: string, anchor: string) => `/${lang}/places#${anchor}`
 
 export const brandColor = "#10b981"
 
