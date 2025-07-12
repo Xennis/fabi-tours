@@ -3,6 +3,7 @@ import { MapIcon, MapPinIcon, StarIcon, TagIcon } from "@heroicons/react/24/outl
 import { cn } from "@/lib/tw"
 import { PlaceProperties, tagColors, tagLabel } from "@/lib/cms/places"
 import { i18n } from "@/content/i18n"
+import { placesPage } from "@/content/config"
 
 const Link = ({ className, ...props }: React.ComponentPropsWithoutRef<"a">) => {
   /* outline-hidden: Somehow the link is auto-selected if a new page with a place is opened */
@@ -33,12 +34,13 @@ export const PlacePropertiesCard = ({ lang, props }: { lang: string; props: Plac
   return (
     <>
       <div className="flex space-x-2.5">
-        <span
+        <a
+          href={placesPage(lang, props.mainTag)}
           className="rounded px-1.5 py-0.5 text-sm text-white"
           style={{ backgroundColor: tagColors[props.mainTag] }}
         >
           {tagLabel(lang)[props.mainTag]}
-        </span>
+        </a>
         <div className="space-x flex items-center">
           <div className="sr-only">
             {`${dictionary.srRating}: `}
