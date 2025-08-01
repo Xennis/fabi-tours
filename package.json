@@ -16,7 +16,7 @@
     "@xennis/react-notion-cms-fetch": "1.0.0-beta.5",
     "@xennis/react-notion-cms-render": "1.0.0-beta.5",
     "mapbox-gl": "^3.13.0",
-    "next": "15.3.4",
+    "next": "15.4.5",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
