@@ -1,5 +1,3 @@
-"use server"
-
 import { unstable_cache } from "next/cache"
 import type { AlternateURLs } from "next/dist/lib/metadata/types/alternative-urls-types"
 import { fetchDatabasePages } from "@xennis/react-notion-cms-fetch"
