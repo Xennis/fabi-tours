@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@source '../../node_modules/@xennis/react-notion-cms-render/**/*.{js,jsx}';
+@source "../../node_modules/@xennis/react-notion-cms-render/**/*.{js,jsx}";
 
 main p {
   @apply py-2 leading-7 text-gray-700;
